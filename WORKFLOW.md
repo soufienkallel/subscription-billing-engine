@@ -30,7 +30,7 @@ Prefixes used: `feat`, `fix`, `test`, `docs`, `refactor`, `chore`, `ci`.
 
 ## Issue labels
 
-- `phase-1` … `phase-15` — which milestone/phase the issue belongs to.
+- Which phase an issue belongs to is tracked via its **GitHub milestone** (Phase 1–15), not a separate label — avoids the two ever disagreeing.
 - `concept:ddd`, `concept:testing`, `concept:concurrency`, `concept:ef-core`, `concept:auth`, `concept:cqrs`, `concept:background-jobs`, `concept:frontend` — primary concept(s) the issue teaches.
 - `size:xs` (~1-2h), `size:s` (~3-5h), `size:m` (~6-10h), `size:l` (~10h+, should probably be split further).
 
