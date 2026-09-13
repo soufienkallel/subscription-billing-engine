@@ -28,4 +28,20 @@ Git workflow & contribution process: [`WORKFLOW.md`](./WORKFLOW.md)
 
 ## Running locally
 
-Not yet available — this is populated as Phase 1 (project setup) completes.
+### Running Postgres locally
+
+1. Copy `.env.example` to `.env` and set your own `POSTGRES_PASSWORD` (and adjust `POSTGRES_USER` / `POSTGRES_DB` if you want).
+2. Start the database:
+   ```bash
+   docker compose up -d
+   ```
+3. Check it's healthy:
+   ```bash
+   docker compose ps
+   ```
+4. Connect with `psql` using the credentials from your `.env`:
+   ```bash
+   psql -h localhost -U <POSTGRES_USER> -d <POSTGRES_DB>
+   ```
+
+The rest of the local setup (running the API, etc.) is populated as Phase 1 (project setup) completes.
