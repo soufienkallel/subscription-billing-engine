@@ -4,7 +4,6 @@ obj/
 *.user
 *.suo
 .vs/
-appsettings.Development.json
 appsettings.*.local.json
 *.pfx
 
